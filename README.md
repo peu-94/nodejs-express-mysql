@@ -14,6 +14,26 @@ password: 'root' => password for the database instance.
 
 database: 'test' => schema for the database instance.
 
+## Tables Created
+
+CREATE TABLE test.`states` (
+  `state_id` int NOT NULL AUTO_INCREMENT,
+  `state_name` varchar(255) DEFAULT NULL,
+  `capital` varchar(255) DEFAULT NULL,
+  `country_id` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`state_id`) 
+);
+
+CREATE TABLE test.`authentication_master` (
+  `authentication_id` int NOT NULL AUTO_INCREMENT,
+  `email_id` varchar(255) DEFAULT NULL,
+  `first_name` varchar(255) DEFAULT NULL,
+  `last_name` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `user_name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`authentication_id`) 
+);
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

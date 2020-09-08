@@ -1,0 +1,7 @@
+//create database connection
+module.exports = {
+    host: 'localhost',
+    user: 'root',
+    password: 'root',
+    database: 'test'
+};
